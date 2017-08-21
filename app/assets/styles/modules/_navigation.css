@@ -1,14 +1,4 @@
-html{
-  -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
-}
-
-body{
-  overflow-x: hidden;
-  margin: 0 auto;
-}
-
-ul.topnav {
+.topnav {
   position: fixed;
   width: 100%;
   z-index: 5;
@@ -20,23 +10,26 @@ ul.topnav {
   background: rgb(25, 25, 25);
   background: rgba(25, 25, 25, .5);
   height: 65px;
-}
 
-ul.topnav li {float: left;}
+  li {
+    float: left;
 
-ul.topnav li a {
-  font-family: 'Abel', sans-serif;
-  font-size: 21px;
-  font-weight: 100;
-  color: #CDCDCD;
-  text-decoration: none;
-  display: inline-block;
-  text-align: center;
-  padding: 20px 16px;
-  transition: 0.3s;
-}
-ul.topnav li.lang {
-  float:right;
+    &.lang{
+      float: right;
+    }
+  }
+
+  a {
+    font-family: 'Abel', sans-serif;
+    font-size: 21px;
+    font-weight: 100;
+    color: #CDCDCD;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    padding: 20px 16px;
+    transition: 0.3s;
+  }
 }
 
 ul.topnav li a:hover {background-color: #555;}
