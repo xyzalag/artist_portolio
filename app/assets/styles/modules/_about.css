@@ -23,15 +23,25 @@
     transform: translate(-50%, -50%);
   }
 
+  &__item {
+    text-align: center;
+  }
+
   &__avatar {
     border-radius: 50%;
     max-width: 250px;
     max-height: 250px;
+    margin: 0 auto;
+    transition: all 0.3s;
 
     @mixin atSmall{
-      max-height: 300px;
-      max-width: 300px;
-      margin-bottom: 15px;
+      max-height: 350px;
+      max-width: 350px;
+      /*margin-bottom: 15px;*/
+    }
+
+    &:hover {
+      transform: scale(1.1);
     }
   }
 
@@ -62,12 +72,12 @@
 
       @mixin atSmall{
         font-size: 21px;
-        max-width: 700px;
-        max-height: 500px;
+        width: 450px;
+        height: 350px;
+        margin: 0 auto;
         background: rgba(25, 25, 25, .3);
         padding: 20px 35px 20px 35px;
-        border-bottom: 0.5px solid #ffffff;
-        border-top: 0.5px solid #ffffff;
+        border: 1px solid #ffffff;
       }
     }
 
