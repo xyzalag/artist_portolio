@@ -1,0 +1,74 @@
+.about {
+
+  &__container {
+    position: relative;
+    margin: 10px;
+    min-height: 550px;
+
+    @mixin atSmall {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      height: 600px;
+    }
+  }
+
+  &__column {
+    position: absolute;
+    padding: 15px 0;
+    text-align: center;
+    top: 50%;
+    bottom: -50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__avatar {
+    border-radius: 50%;
+    max-width: 250px;
+    max-height: 250px;
+
+    @mixin atSmall{
+      max-height: 300px;
+      max-width: 300px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__description {
+    font-size: 17px;
+    border-top: none;
+    border-bottom: none;
+    padding: 0;
+    width: auto;
+    height: auto;
+    color: #B2B1B3;
+    font-family: 'Economica', sans-serif;
+    font-weight: 200;
+    line-height: 1.4;
+    background: rgba(25, 25, 25, .3);
+
+      &:first-letter{
+        font-size: 200%;
+        line-height: normal;
+      }
+
+      &:after{
+        /* clearfix */
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      @mixin atSmall{
+        font-size: 21px;
+        max-width: 700px;
+        max-height: 500px;
+        background: rgba(25, 25, 25, .3);
+        padding: 20px 35px 20px 35px;
+        border-bottom: 0.5px solid #ffffff;
+        border-top: 0.5px solid #ffffff;
+      }
+    }
+
+  }
