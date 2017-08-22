@@ -29,10 +29,14 @@
     text-align: center;
     padding: 20px 16px;
     transition: 0.3s;
+
+    &:hover{
+      background-color: #555;
+    }
   }
 }
 
-ul.topnav li a:hover {background-color: #555;}
+
 
 ul.topnav li.icon {display: none;}
 
