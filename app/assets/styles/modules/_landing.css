@@ -6,6 +6,10 @@
   text-align: center;
   top:0;
 
+  &--half-height {
+    height: 60vh;
+  }
+
   &:after{
     content: "";
     display: table;
@@ -24,6 +28,25 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+
+    &--parallax {
+      height: 75vh;
+      position: fixed;
+      background-position: center;
+      background-attachment: scroll;
+
+      @mixin atMedium{
+        height: 60vh;
+        background-attachment: fixed;
+      }
+
+      &--music {
+        background-image: url('../../assets/images/music-parallax.jpg');
+      }
+      &--film-void {
+        background-image: url('../../assets/images/film-parallax.jpg');
+      }
+    }
   }
 
   &__title__container {
@@ -43,12 +66,22 @@
     padding: 15px 20px 15px 20px;
     color: #CDCDCD;
     font-family: 'Oswald', sans-serif;
-    font-size: 80px;
+    font-size: 60px;
     text-align: center;
     cursor: default;
     letter-spacing: 0.1px;
     background: rgb(25, 25, 25);
     background: rgba(25, 25, 25, .5);
+
+    @mixin atMedium {
+      font-size: 80px;
+    }
+
+    &--half-height {
+      background: none;
+      color: #fff;
+      margin-top: 20px;
+    }
   }
 
   &__subtitle{

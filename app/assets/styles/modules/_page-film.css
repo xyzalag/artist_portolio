@@ -1,0 +1,35 @@
+.page-film {
+
+  &__item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+
+    @mixin atMedium {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+
+  &__gallery-item {
+  }
+
+  &__description {
+    font-size: 20px;
+    color: $mainWhite;
+    font-family: 'Economica', sans-serif;
+    font-weight: 100;
+    line-height: 1.4;
+    text-align: left;
+  }
+
+  &__video {
+    text-align: center;
+  }
+
+  &__vimeo {
+    width: 50vw;
+    height: 320px;
+  }
+
+}
