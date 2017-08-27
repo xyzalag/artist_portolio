@@ -24,10 +24,14 @@
     height: 100%;
     position: absolute;
     z-index: -5;
-    background-image: url('../../assets/images/hero.png');
+    background-image: url('../../assets/images/hero.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+
+    &--simia-description {
+      background-image: url('../../assets/images/simia-poster.jpg');
+    }
 
     &--parallax {
       height: 75vh;
@@ -45,6 +49,9 @@
       }
       &--film-void {
         background-image: url('../../assets/images/film-parallax.jpg');
+      }
+      &--film-simia {
+        background-image: url('../../assets/images/simia-parallax.jpg');
       }
     }
   }
@@ -64,14 +71,12 @@
   &__title {
     margin-top: 0px;
     padding: 15px 20px 15px 20px;
-    color: #CDCDCD;
+    color: #fff;
     font-family: 'Oswald', sans-serif;
     font-size: 60px;
     text-align: center;
     cursor: default;
-    letter-spacing: 0.1px;
-    background: rgb(25, 25, 25);
-    background: rgba(25, 25, 25, .5);
+    letter-spacing: 1px;
 
     @mixin atMedium {
       font-size: 80px;
@@ -88,7 +93,7 @@
     margin-top: -50px;
     margin-bottom: 0px;
     padding: 2px 5px 2px 5px;
-    color: #CDCDCD;
+    color: #fff;
     font-family: 'Unica One', cursive;
     font-weight: 200;
     font-size: 29px;
