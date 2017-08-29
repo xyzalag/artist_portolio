@@ -22,8 +22,8 @@
   a {
     font-family: 'Abel', sans-serif;
     font-size: 21px;
-    font-weight: 100;
-    color: #fff;
+    font-weight: lighter;
+    color: $mainWhite;
     text-decoration: none;
     display: inline-block;
     text-align: center;

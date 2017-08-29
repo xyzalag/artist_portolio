@@ -8,9 +8,8 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <link type = "text/css" rel= "stylesheet" href="temp\styles\style.css">
   <link href="https://fonts.googleapis.com/css?family=Abel%7cEconomica%7cOswald%7cPoiret+One%7cUnica+One" rel="stylesheet">
-  <!-- <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"> -->
   <script src="https://use.fontawesome.com/ebab1b6caa.js"></script>
-  <style></style>
+  <link rel="stylesheet" type="text/css" href="..\node_modules\@fancyapps\fancybox\dist\jquery.fancybox.min.css">
 </head>
 <body>
 <!--TOPBAR-->
@@ -42,9 +41,14 @@ Home</a></li>
       <div class="row ">
         <div class="row__large-4">
           <div class="page-music__item">
-            <iframe class="page-music__player page-music__player--soundcloud" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/338818007&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 
-            <iframe class="page-music__player page-music__player--soundcloud" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/338946677&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+            <a data-fancybox data-type="iframe" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/338818007&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true" href="javascript:;">
+               <img src="assets/images/music/soundtrack-4.jpg" class="page-music__player page-music__player--soundcloud" alt="Stefan Monin Film Simia" />
+            </a>
+
+            <a data-fancybox data-type="iframe" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/338946677&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true" href="javascript:;">
+               <img src="assets/images/music/soundtrack-2.jpg" class="page-music__player page-music__player--soundcloud" alt="Stefan Monin Film Simia" />
+            </a>
           </div>
         </div>
 
@@ -55,16 +59,27 @@ Home</a></li>
               Rolling waves of noise, trebly drones emerging from the clouds of sonic abyss, expansive yet claustrophobic atmosphere of the seasons. <br />
               All of that as a part of haunted recordings made to create a piece of cinema for the ear.
             </p>
-            <button class="page-music__button page-music__button--film"><a href="https://www.youtube.com/channel/UCJrXDb250Ng0dB00_73QV0A"><i class="fa fa-soundcloud" aria-hidden="true"></i>SOUNDCLOUD</a></button>
-            <button class="page-music__button"><a href="https://skinnysoulsrecords.bandcamp.com/"><i class="fa fa-bandcamp" aria-hidden="true"></i>BANDCAMP</a></button>
+            <a class="page-music__link" href="https://www.youtube.com/channel/UCJrXDb250Ng0dB00_73QV0A">
+               <button class="page-music__button page-music__button--film"><i class="fa fa-soundcloud" aria-hidden="true"></i>SOUNDCLOUD</button>
+            </a>
+
+            <a class="page-music__link" href="https://skinnysoulsrecords.bandcamp.com/">
+                <button class="page-music__button"><i class="fa fa-bandcamp" aria-hidden="true"></i>BANDCAMP</button>
+            </a>
           </div>
         </div>
 
         <div class="row__large-4">
           <div class="page-music__item">
-            <iframe class="page-music__player page-music__player--soundcloud" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/338819291&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 
-            <iframe class="page-music__player page-music__player--soundcloud" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/338956803&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+            <a data-fancybox data-type="iframe" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/338819291&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true" href="javascript:;">
+               <img src="assets/images/music/soundtrack-3.jpg" class="page-music__player page-music__player--soundcloud" alt="Stefan Monin Film Simia" />
+            </a>
+
+            <a data-fancybox data-type="iframe" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/338956803&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true" href="javascript:;">
+               <img src="assets/images/music/soundtrack-1.jpg" class="page-music__player page-music__player--soundcloud" alt="Stefan Monin Film Simia" />
+            </a>
+
           </div>
         </div>
       </div>
@@ -76,5 +91,9 @@ Home</a></li>
             © 2017 Stefan Monin
           </p>
         </footer>
+
+        <script src="..\node_modules\jquery\dist\jquery.min.js"></script>
+        <script src="..\node_modules\@fancyapps\fancybox\dist\jquery.fancybox.min.js"></script>
+        <script src="temp/scripts/App.js"></script>
     </body>
 </html>

@@ -14,12 +14,12 @@
 <body>
 <!--TOPBAR-->
       <ul class="topnav" id="myTopnav">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#music">Music</a></li>
-          <li><a href="#film">Film</a></li>
+          <li><a href="#home" class="scroll-nav">Home</a></li>
+          <li><a href="#about" class="scroll-nav" >About</a></li>
+          <li><a href="#music" class="scroll-nav">Music</a></li>
+          <li><a href="#film" class="scroll-nav">Film</a></li>
           <li><a href="commerce.html">Commerce</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" class="scroll-nav">Contact</a></li>
           <li class="lang"><a href="indexPl.html">PL</a></li>
           <li class="icon"><a href="javascript:void(0);" style="font-size:21px;" onclick="myFunction()">☰</a></li>
       </ul>
@@ -65,25 +65,44 @@
         </div>
       </div>
     </section>
+<!--ABOUT TESTIMONIAL-->
+<section class="page-section page-section--light-blue">
+  <h2 class="page-section__title">About</h2>
+  <div class="row testimonial__row">
+    <div class="testimonial">
+      <div class="testimonial__photo">
+        <img src="assets/images/avatar.jpg" alt="Avatar" />
+      </div>
+      <h3 class="testimonial__title">STEFAN MONIN</h3>
+      <p>Stefan Monin (1994) born in Riwne - independent film director, scriptwriter, visual artist, music producer and founder of underground music label - Skinny Souls Records.
+      Interested in interdisciplinary approach to art. He studied the Film Directing at AMA Film School (Multi Art Academy) in Krakow (2013-2016), graduating from the Faculty of Film and currently is finishing his postgraduate course.<br>
+      Currently he is working on his second feature film, while also expanding the Skinny Souls brand.</p>
+    </div>
+  </div>
+</section>
 <!--MUSIC-->
     <section class="page-section page-section--light-blue" id="music">
       <h2 class="page-section__title">Music</h2>
       <div class="row">
         <div class="row__medium-6">
-          <div class="music__item">
-            <div class="music__text__wrapper">
-              <h1 class="music__text music__text--two-lines"><a href="music-skinnysouls.html">SKINNY SOULS RECORDS</a></h1>
+          <a href ="music-skinnysouls.html">
+            <div class="music__item">
+              <div class="music__text__wrapper">
+                <h1 class="music__text music__text--two-lines">SKINNY SOULS RECORDS</h1>
+              </div>
+              <img src="assets/images/music-ssr.jpg" class="music__image" alt="stefan monin skinny souls records"/>
             </div>
-            <img src="assets/images/music-ssr.jpg" class="music__image" alt="stefan monin skinny souls records"/>
-          </div>
+          </a>
         </div>
         <div class="row__medium-6">
-          <div class="music__item">
-            <div class="music__text__wrapper">
-              <h1 class="music__text music__text--one-line"><a href="music-film.html">FILM MUSIC</a></h1>
+          <a href="music-film.html">
+            <div class="music__item">
+              <div class="music__text__wrapper">
+                <h1 class="music__text music__text--one-line">FILM MUSIC</h1>
+              </div>
+              <img src="assets/images/music-film.jpg" class="music__image" alt="stefan monin music film" />
             </div>
-            <img src="assets/images/music-film.jpg" class="music__image" alt="stefan monin music film" />
-          </div>
+          </a>
         </div>
       </div>
     </section>
@@ -92,20 +111,24 @@
         <h2 class="page-section__title">Film</h2>
         <div class="row">
           <div class="row__medium-6">
-            <div class="film__item">
-              <div class="film__text__wrapper">
-                <h1 class="film__text film__text--one-line"><a href="film-void.html">VOID</a></h1>
+            <a href="film-void.html">
+              <div class="film__item">
+                <div class="film__text__wrapper">
+                  <h1 class="film__text film__text--one-line">VOID</h1>
+                </div>
+                <img src="assets/images/film-void.jpg" class="music__image" alt="stefan monin film void"/>
               </div>
-              <img src="assets/images/film-void.jpg" class="music__image" alt="stefan monin film void"/>
-            </div>
+            </a>
           </div>
           <div class="row__medium-6">
-            <div class="film__item">
-              <div class="film__text__wrapper">
-                <h1 class="film__text film__text--one-line"><a href="film-simia.html">SIMIA</a></h1>
+            <a href="film-simia.html">
+              <div class="film__item">
+                <div class="film__text__wrapper">
+                  <h1 class="film__text film__text--one-line">SIMIA</h1>
+                </div>
+                <img src="assets/images/film-simia.jpg" class="music__image"alt="stefan monin film simia" />
               </div>
-              <img src="assets/images/film-simia.jpg" class="music__image"alt="stefan monin film simia" />
-            </div>
+            </a>
           </div>
         </div>
       </section>
@@ -116,7 +139,7 @@
             <div class="row row--equal-height-at-medium">
 
               <div class="row__medium-6">
-                <form action="contact-form.php" method="POST">
+                <form action="contact-form.php" method="POST" class="form">
                   <h3 class="form__title">LEAVE ME A MESSAGE</h3>
                   <label for="name">Name</label>
                   <input class="form__input" id="name" type="text" name="name" placeholder="name..." required/>
@@ -151,7 +174,7 @@
             </div>
         </section>
 <!--SCROLL_UP_ARROW-->
-      <a href="javascript:void(0);" class="scroll" title="Scroll to Top" style="display: none;"><span><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></span></a>
+      <a href="javascript:void(0);" class="scroll fa fa-arrow-circle-up fa-3x" title="Scroll to Top" style="display: none;"  aria-hidden="true"></a>
 <!--FOOTER-->
         <footer class="footer">
           <p class="footer__text">
@@ -159,6 +182,6 @@
           </p>
         </footer>
 
-    <script src="/temp/scripts/App.js"></script>
+    <script src="temp/scripts/App.js"></script>
     </body>
 </html>

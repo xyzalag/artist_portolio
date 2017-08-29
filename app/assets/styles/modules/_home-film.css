@@ -1,0 +1,71 @@
+.film {
+
+  &__item {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    transition: all 0.25s ease-out;
+
+    &:hover {
+      transform: scale(0.9);
+    }
+  }
+
+  &__text__wrapper {
+    position: relative;
+    width: 100%;
+    float: left;
+  }
+
+  &__text {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.25s ease-out;
+
+    &:hover {
+      color: $neonGreen;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    &--two-lines {
+      transform: translate(-50%, 165%);
+    }
+
+    &--one-line {
+      transform: translate(-50%, 360%);
+    }
+
+    &:hover {
+      color: $neonGreen;
+    }
+
+    @mixin atSmall{
+      font-size: 45px;
+    }
+  }
+
+  &__image {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    border: 5px solid #fff;
+    transition: all 0.25s ease-out;
+
+    @mixin atSmall{
+      width: 400px;
+      height: 400px;
+      border: 10px solid #fff;
+    }
+  }
+}

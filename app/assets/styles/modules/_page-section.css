@@ -34,6 +34,10 @@
       font-size: 67px;
       margin-bottom: 32px;
     }
+
+    &--commerce {
+      font-family: 'Oswald', sans-serif;
+    }
   }
 
 }
