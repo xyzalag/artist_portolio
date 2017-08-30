@@ -10344,7 +10344,6 @@ new _RevealOnScroll2.default((0, _jquery2.default)(".page-section__title"), "70%
 __webpack_require__(4)(_jquery2.default);
 
 // SCROLL TO THE TOP BUTTON
-
 (0, _jquery2.default)(document).ready(function () {
   (0, _jquery2.default)(window).scroll(function () {
     if ((0, _jquery2.default)(this).scrollTop() > 100) {
@@ -10395,6 +10394,7 @@ __webpack_require__(4)(_jquery2.default);
   });
 });
 
+// FANCYBOX
 (0, _jquery2.default)(document).ready(function () {
   (0, _jquery2.default)('.fancybox').fancybox();
 });

@@ -3,8 +3,8 @@ import RevealOnScroll from './modules/RevealOnScroll';
 new RevealOnScroll($(".page-section__title"), "70%");
 require('fancybox')($);
 
-// SCROLL TO THE TOP BUTTON
 
+// SCROLL TO THE TOP BUTTON
 $(document).ready(function(){
     $(window).scroll(function(){
         if ($(this).scrollTop() > 100) {
@@ -55,6 +55,7 @@ $(document).ready(function() {
   });
 });
 
+// FANCYBOX
 $(document).ready(function() {
      $('.fancybox').fancybox();
  });

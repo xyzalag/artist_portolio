@@ -1,4 +1,4 @@
-.about {
+/*.about {
 
   &__container {
     position: relative;
@@ -37,7 +37,6 @@
     @mixin atSmall{
       max-height: 350px;
       max-width: 350px;
-      /*margin-bottom: 15px;*/
     }
 
     &:hover {
@@ -63,13 +62,6 @@
         line-height: normal;
       }
 
-      &:after{
-        /* clearfix */
-        content: "";
-        display: table;
-        clear: both;
-      }
-
       @mixin atSmall{
         font-size: 21px;
         width: 450px;
@@ -81,9 +73,10 @@
       }
     }
 
-  }
+  }*/
 
   .testimonial {
+
     background-color: rgba(255, 255, 255, .8);
     padding: 0 18px 1px 18px;
     margin-bottom: 98px;
@@ -102,6 +95,17 @@
       margin-bottom: 0;
     }
 
+    &__row {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 100px;
+
+      @mixin atMedium {
+        width: 60%;
+      }
+    }
+
     &__photo {
       border-radius: 80px;
       overflow: hidden;
@@ -111,29 +115,20 @@
       position: relative;
       top: -80px;
       border: 6px solid rgba(255, 255, 255, .8);
+      transition: all 0.25s ease-out;
+
+      &:hover {
+        transform: scale(1.2);
+      }
     }
 
     &__title {
       color: $darkBlue;
       text-align: center;
-      font-size: 1.5rem;
+      font-size: 24px;
       font-weight: 500;
       margin: 0;
+      margin-top: 15px;
       font-family: 'Oswald', sans-serif;
     }
-
-    &__subtitle {
-      color: $neonGreen;
-      text-align: center;
-      font-weight: 400;
-      font-size: 0.9375rem;
-      margin: .25rem 0 1rem 0;
-    }
-  }
-
-  .testimonial__row {
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
   }

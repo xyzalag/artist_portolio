@@ -6,13 +6,19 @@
   <meta name="description" content="Portolio Stefan Monin">
   <meta name="keywords" content="Stefan Monin, Filmmaker, Music Producer, Void, Above Neon, Skinny Souls, Ama Film School">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <link type = "text/css" rel= "stylesheet" href="temp\styles\style.css">
   <link href="https://fonts.googleapis.com/css?family=Abel%7cEconomica%7cOswald%7cPoiret+One%7cUnica+One" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
-  <style></style>
+  
+  <!-- build:css assets/style/style.css -->
+  <link type = "text/css" rel= "stylesheet" href="temp\styles\style.css">
+  <!-- endbuild -->
+
+  <!-- build:js assets/scripts/Vendor.js -->
+  <script src="/temp/scripts/Vendor.js"></script>
+  <!-- endbuild -->
 </head>
 <body>
-<!--TOPBAR-->
+
       <ul class="topnav" id="myTopnav">
           <li><a href="#home" class="scroll-nav">Home</a></li>
           <li><a href="#about" class="scroll-nav" >About</a></li>
@@ -21,19 +27,9 @@
           <li><a href="commerce.html">Commerce</a></li>
           <li><a href="#contact" class="scroll-nav">Contact</a></li>
           <li class="lang"><a href="indexPl.html">PL</a></li>
-          <li class="icon"><a href="javascript:void(0);" style="font-size:21px;" onclick="myFunction()">☰</a></li>
+          <li class="icon"><a href="javascript:void(0);" style="font-size:21px;" onclick="responsiveNav()">☰</a></li>
       </ul>
-    <script>
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
-    }
-    </script>
-<!--LANDING-->
+
     <section class="landing" id="home">
       <div class = "landing__bg"></div>
       <div class="landing__title__container">
@@ -46,27 +42,8 @@
         <a href="#music" class="landing__button">MUSIC</a>
       </div>
     </section>
-<!--ABOUT-->
-    <section class="page-section page-section--dark-blue" id="about">
-      <h2 class="page-section__title">About</h2>
-      <div class="row">
-        <div class="row__medium-6">
-          <div class="about__item">
-            <img src="assets/images/avatar.jpg" alt="Avatar" class="about__avatar" />
-          </div>
-        </div>
 
-        <div class="row__medium-6">
-          <div class="about__item">
-            <p class="about__description">Stefan Monin (1994) born in Riwne - independent film director, scriptwriter, visual artist, music producer and founder of underground music label - Skinny Souls Records.
-            Interested in interdisciplinary approach to art. He studied the Film Directing at AMA Film School (Multi Art Academy) in Krakow (2013-2016), graduating from the Faculty of Film and currently is finishing his postgraduate course.<br>
-            Currently he is working on his second feature film, while also expanding the Skinny Souls brand.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-<!--ABOUT TESTIMONIAL-->
-<section class="page-section page-section--light-blue">
+<section class="page-section page-section--dark-blue">
   <h2 class="page-section__title">About</h2>
   <div class="row testimonial__row">
     <div class="testimonial">
@@ -80,7 +57,7 @@
     </div>
   </div>
 </section>
-<!--MUSIC-->
+
     <section class="page-section page-section--light-blue" id="music">
       <h2 class="page-section__title">Music</h2>
       <div class="row">
@@ -106,7 +83,7 @@
         </div>
       </div>
     </section>
-<!--FILM-->
+
       <section class="page-section page-section--dark-blue" id="film">
         <h2 class="page-section__title">Film</h2>
         <div class="row">
@@ -132,7 +109,7 @@
           </div>
         </div>
       </section>
-<!--CONTACT-->
+
         <section class="contact page-section" id="contact">
           <div class="contact__bg"></div>
             <h2 class="page-section__title">Contact</h2>
@@ -173,15 +150,25 @@
 
             </div>
         </section>
-<!--SCROLL_UP_ARROW-->
+
       <a href="javascript:void(0);" class="scroll fa fa-arrow-circle-up fa-3x" title="Scroll to Top" style="display: none;"  aria-hidden="true"></a>
-<!--FOOTER-->
+
         <footer class="footer">
           <p class="footer__text">
             © 2017 Stefan Monin
           </p>
         </footer>
-
-    <script src="temp/scripts/App.js"></script>
+    <script>function responsiveNav() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        };
+    }
+    </script>
+    <!-- build:js assets/scripts/App.js -->
+    <script src="/temp/scripts/App.js"></script>
+    <!-- endbuild -->
     </body>
 </html>
