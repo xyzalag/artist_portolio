@@ -27,10 +27,16 @@
 
     &--bg {
       @mixin atMedium {
-        background-image: url('../../assets/images/simia-poster.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+
+        &--simia {
+          background-image: url('../../assets/images/simia-poster.jpg');
+        }
+
+        &--void {
+        }
       }
     }
 
@@ -85,10 +91,10 @@
   &__description {
     font-size: 17px;
     color: $mainWhite;
-    font-family: 'Economica', sans-serif;
-    font-weight: 100;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
     line-height: 1.4;
-    text-align: left;
+    text-align: center;
     padding: 10px 10px;
     width: 100%;
     display: block;
@@ -101,7 +107,8 @@
     }
 
     @mixin atMedium {
-      border: 1px solid #fff;
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #fff;
       font-size: 20px;
       width: 90%;
       margin: 40px auto;
@@ -111,14 +118,13 @@
     @mixin atLarge {
       width: 80%;
       margin: 60px auto;
-      padding: 30px 60px;
+      padding: 40px 60px;
     }
 
     &--simia {
-      text-align: center;
 
       @mixin atMedium {
-        font-size: 23px;
+        font-size: 22px;
       }
     }
   }

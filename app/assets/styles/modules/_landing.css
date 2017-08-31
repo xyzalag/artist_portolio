@@ -131,9 +131,14 @@
       cursor: pointer;
       transition: all 0.25s ease-out;
 
+      &--pl {
+        font-family: 'Economica', sans-serif;
+        font-size: 22px;
+      }
+
       &:hover {
         background-color: #435658;
-        padding: 30px;
+        padding: 20px;
         border: 1px solid #ffffff;
         font-size: 25px;
       }

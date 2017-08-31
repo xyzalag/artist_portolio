@@ -6,27 +6,25 @@
   <meta name="description" content="Portolio Stefan Monin">
   <meta name="keywords" content="Stefan Monin, Filmmaker, Music Producer, Void, Above Neon, Skinny Souls, Ama Film School">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <link type = "text/css" rel= "stylesheet" href="temp\styles\style.css">
-  <link href="https://fonts.googleapis.com/css?family=Abel%7cEconomica%7cOswald%7cPoiret+One%7cUnica+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Economica|Oswald:200,300,400|Poiret+One|Unica+One&amp;subset=latin-ext" rel="stylesheet">
   <script src="https://use.fontawesome.com/ebab1b6caa.js"></script>
+  <link rel="shortcut icon" href="assets/images/logo.png"/>
+
+  <!-- build:css assets/style/style.css -->
+  <link type = "text/css" rel= "stylesheet" href="temp\styles\style.css">
+  <!-- endbuild -->
+
+  <!-- build:js assets/scripts/Vendor.js -->
+  <script src="/temp/scripts/Vendor.js"></script>
+  <!-- endbuild -->
 </head>
 <body>
 <!--TOPBAR-->
       <ul class="topnav" id="myTopnav">
           <li><a href="index.html"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
 Home</a></li>
-          <li class="lang"><a href="indexPl.html">PL</a></li>
+          <li class="lang lang--stay"><a href="music-skinnysouls-pl.html">PL</a></li>
       </ul>
-    <script>
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
-    }
-    </script>
 <!--LANDING-->
     <section class="landing landing--half-height" id="home">
       <div class = "landing__bg landing__bg--parallax landing__bg--parallax--music"></div>
@@ -83,5 +81,8 @@ Home</a></li>
             © 2017 Stefan Monin
           </p>
         </footer>
+        <!-- build:js assets/scripts/App.js -->
+        <script src="temp/scripts/App.js"></script>
+        <!-- endbuild -->
     </body>
 </html>

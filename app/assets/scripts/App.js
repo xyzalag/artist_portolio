@@ -1,6 +1,7 @@
 import $ from 'jquery';
 import RevealOnScroll from './modules/RevealOnScroll';
 new RevealOnScroll($(".page-section__title"), "70%");
+new RevealOnScroll($(".testimonial"), "80%");
 require('fancybox')($);
 
 

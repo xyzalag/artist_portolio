@@ -10,6 +10,8 @@
   background: rgb(25, 25, 25);
   background: rgba(25, 25, 25, .5);
   height: 65px;
+  font-family: 'Economica', sans-serif;
+
 
   li {
     float: left;
@@ -20,7 +22,6 @@
   }
 
   a {
-    font-family: 'Abel', sans-serif;
     font-size: 21px;
     font-weight: lighter;
     color: $mainWhite;
@@ -45,10 +46,16 @@ ul.topnav li.icon {display: none;}
 @media (max-width:680px) {
   ul.topnav {
     position: static;
-    background-color:#333;
+    background-color: $mainGreen;
     height:inherit;
   }
   ul.topnav li:not(:first-child) {display: none;}
+
+  ul.topnav li.lang--stay {
+    float:right;
+    display: inline-block;
+  }
+
   ul.topnav li.icon {
     float: right;
     display: inline-block;
@@ -62,6 +69,7 @@ ul.topnav li.icon {display: none;}
     right: 0;
     top: 0;
   }
+
   ul.topnav.responsive li {
     float: none;
     display: inline;

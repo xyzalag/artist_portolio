@@ -6,17 +6,24 @@
   <meta name="description" content="Portolio Stefan Monin">
   <meta name="keywords" content="Stefan Monin, Filmmaker, Music Producer, Void, Above Neon, Skinny Souls, Ama Film School">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <link type = "text/css" rel= "stylesheet" href="temp\styles\style.css">
-  <link href="https://fonts.googleapis.com/css?family=Abel%7cEconomica%7cOswald%7cPoiret+One%7cUnica+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abel|Economica|Oswald:200,300,400|Poiret+One|Unica+One&amp;subset=latin-ext" rel="stylesheet">
   <script src="https://use.fontawesome.com/ebab1b6caa.js"></script>
-  <link rel="stylesheet" type="text/css" href="..\node_modules\@fancyapps\fancybox\dist\jquery.fancybox.min.css">
+  <link rel="stylesheet" type="text/css" href="@fancyapps\fancybox\dist\jquery.fancybox.min.css">
+  <link rel="shortcut icon" href="assets/images/logo.png"/>
+
+  <!-- build:css assets/style/style.css -->
+  <link type = "text/css" rel= "stylesheet" href="temp\styles\style.css">
+  <!-- endbuild -->
+
+  <!-- build:js assets/scripts/Vendor.js -->
+  <script src="/temp/scripts/Vendor.js"></script>
+  <!-- endbuild -->
 </head>
 <body>
 <!--TOPBAR-->
       <ul class="topnav" id="myTopnav">
-          <li><a href="index.html"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
-Home</a></li>
-          <li class="lang"><a href="indexPl.html">PL</a></li>
+          <li><a href="index.html"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Home</a></li>
+          <li class="lang lang--stay"><a href="film-simia-pl.html">PL</a></li>
       </ul>
 
 <!--LANDING-->
@@ -35,7 +42,7 @@ Home</a></li>
 
       <!--DESCRIPTION-->
       <div class="row">
-        <div class="page-film__item page-film__item--bg">
+        <div class="page-film__item page-film__item--bg page-film__item--bg--simia">
           <p class="page-film__description page-film__description--simia">
             SIMIA is a 30 minute body horror written and directed by Stefan Monin.<br />
             It's a film where the main role is the stuffy atmosphere of the revenge cinema.
@@ -107,8 +114,11 @@ Home</a></li>
             © 2017 Stefan Monin
           </p>
         </footer>
-        <script src="..\node_modules\jquery\dist\jquery.min.js"></script>
-  	    <script src="..\node_modules\@fancyapps\fancybox\dist\jquery.fancybox.min.js"></script>
+        <script src="jquery\dist\jquery.min.js"></script>
+  	    <script src="@fancyapps\fancybox\dist\jquery.fancybox.min.js"></script>
+
+        <!-- build:js assets/scripts/App.js -->
         <script src="temp/scripts/App.js"></script>
+        <!-- endbuild -->
     </body>
 </html>

@@ -17,14 +17,26 @@ gulp.task('previewDist', function() {
   });
 });
 
-gulp.task('deleteDistFolder', ['icons'], function() {
+gulp.task('deleteDistFolder', function() {
   return del("./docs");
 });
+
 
 gulp.task('copyGeneralFiles', ['deleteDistFolder'], function() {
   var pathsToCopy = [
     './app/**/*',
     '!./app/index.html',
+    '!./app/index-pl.html',
+    '!./app/commerce.html',
+    '!./app/commerce-pl.html',
+    '!./app/film-simia.html',
+    '!./app/film-simia-pl.html',
+    '!./app/film-void.html',
+    '!./app/film-void-pl.html',
+    '!./app/music-film.html',
+    '!./app/music-film-pl.html',
+    '!./app/music-skinnysouls.html',
+    '!./app/music-skinnysouls-pl.html',
     '!./app/assets/images/**',
     '!./app/assets/styles/**',
     '!./app/assets/scripts/**',
@@ -52,12 +64,13 @@ gulp.task('useminTrigger', ['deleteDistFolder'], function() {
 });
 
 gulp.task('usemin',['styles', 'scripts'], function() {
-  return gulp.src("./app/index.html")
+  return gulp.src(["./app/index.html", "./app/commerce-pl.html", "./app/commerce.html", "./app/film-simia-pl.html", "./app/film-simia.html", "./app/film-void-pl.html", "./app/film-void.html", "./app/index-pl.html", "./app/music-film-pl.html", "./app/music-film.html", "./app/music-skinnysouls-pl.html", "./app/music-skinnysouls.html"])
     .pipe(usemin({
       css: [function(){return rev()}, function() {return cssnano()}],
       js: [function() {return rev()}, function() {return uglify()}]
     }))
     .pipe(gulp.dest("./docs"));
 });
+
 
 gulp.task('build', ['deleteDistFolder','copyGeneralFiles',  'optimizeImages', 'useminTrigger']);

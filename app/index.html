@@ -6,9 +6,10 @@
   <meta name="description" content="Portolio Stefan Monin">
   <meta name="keywords" content="Stefan Monin, Filmmaker, Music Producer, Void, Above Neon, Skinny Souls, Ama Film School">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <link href="https://fonts.googleapis.com/css?family=Abel%7cEconomica%7cOswald%7cPoiret+One%7cUnica+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abel|Economica|Oswald:200,300,400|Poiret+One|Unica+One&amp;subset=latin-ext" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
-  
+  <link rel="shortcut icon" href="assets/images/logo.png"/>
+
   <!-- build:css assets/style/style.css -->
   <link type = "text/css" rel= "stylesheet" href="temp\styles\style.css">
   <!-- endbuild -->
@@ -19,14 +20,14 @@
 </head>
 <body>
 
-      <ul class="topnav" id="myTopnav">
+      <ul class="topnav topnav" id="myTopnav">
           <li><a href="#home" class="scroll-nav">Home</a></li>
           <li><a href="#about" class="scroll-nav" >About</a></li>
           <li><a href="#music" class="scroll-nav">Music</a></li>
           <li><a href="#film" class="scroll-nav">Film</a></li>
           <li><a href="commerce.html">Commerce</a></li>
           <li><a href="#contact" class="scroll-nav">Contact</a></li>
-          <li class="lang"><a href="indexPl.html">PL</a></li>
+          <li class="lang"><a href="index-pl.html">PL</a></li>
           <li class="icon"><a href="javascript:void(0);" style="font-size:21px;" onclick="responsiveNav()">☰</a></li>
       </ul>
 
@@ -116,16 +117,19 @@
             <div class="row row--equal-height-at-medium">
 
               <div class="row__medium-6">
-                <form action="contact-form.php" method="POST" class="form">
-                  <h3 class="form__title">LEAVE ME A MESSAGE</h3>
-                  <label for="name">Name</label>
-                  <input class="form__input" id="name" type="text" name="name" placeholder="name..." required/>
-                  <label for="email">E-mail</label>
-                  <input class="form__input" id="email" type="text" name="email" placeholder="email..." required/>
-                  <label for="message">Message</label>
-                  <textarea class="form__input form__input--textarea" id="message" name="message" placeholder="message..." required></textarea>
-                  <button class="form__button" type="submit">Send</button>
-                </form>
+                <div class="form">
+                  <form action="contact-form.php" method="POST">
+                    <h3 class="form__title">LEAVE ME A MESSAGE</h3>
+                    <label for="name">Name</label>
+                    <input class="form__input" id="name" type="text" name="name" placeholder="name..." required/>
+                    <label for="email">E-mail</label>
+                    <input class="form__input" id="email" type="text" name="email" placeholder="email..." required/>
+                    <label for="message">Message</label>
+                    <textarea class="form__input form__input--textarea" id="message" name="message" placeholder="message..." required></textarea>
+                    <button class="form__button" type="submit">Send</button>
+                  </form>
+                </div>
+
               </div>
 
               <div class="row__medium-6">
@@ -168,7 +172,7 @@
     }
     </script>
     <!-- build:js assets/scripts/App.js -->
-    <script src="/temp/scripts/App.js"></script>
+    <script src="temp/scripts/App.js"></script>
     <!-- endbuild -->
     </body>
 </html>

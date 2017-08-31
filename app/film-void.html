@@ -6,29 +6,25 @@
   <meta name="description" content="Portolio Stefan Monin">
   <meta name="keywords" content="Stefan Monin, Filmmaker, Music Producer, Void, Above Neon, Skinny Souls, Ama Film School">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <link type = "text/css" rel= "stylesheet" href="temp\styles\style.css">
-  <link href="https://fonts.googleapis.com/css?family=Abel%7cEconomica%7cOswald%7cPoiret+One%7cUnica+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abel|Economica|Oswald:200,300,400|Poiret+One|Unica+One&amp;subset=latin-ext" rel="stylesheet">
   <script src="https://use.fontawesome.com/ebab1b6caa.js"></script>
-  <link rel="stylesheet" type="text/css" href="..\node_modules\@fancyapps\fancybox\dist\jquery.fancybox.min.css">
+  <link rel="stylesheet" type="text/css" href="@fancyapps\fancybox\dist\jquery.fancybox.min.css">
+  <link rel="shortcut icon" href="assets/images/logo.png"/>
+
+  <!-- build:css assets/style/style.css -->
+  <link type = "text/css" rel= "stylesheet" href="temp\styles\style.css">
+  <!-- endbuild -->
+
+  <!-- build:js assets/scripts/Vendor.js -->
+  <script src="/temp/scripts/Vendor.js"></script>
+  <!-- endbuild -->
 </head>
 <body>
 <!--TOPBAR-->
       <ul class="topnav" id="myTopnav">
-          <li><a href="index.html"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
-Home</a></li>
-          <li class="lang"><a href="indexPl.html">PL</a></li>
-          <li class="icon"><a href="javascript:void(0);" style="font-size:21px;" onclick="myFunction()">☰</a></li>
+          <li><a href="index.html"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Home</a></li>
+          <li class="lang lang--stay"><a href="film-void-pl.html">PL</a></li>
       </ul>
-    <script>
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
-    }
-    </script>
 <!--LANDING-->
     <section class="landing landing--half-height" id="home">
       <div class = "landing__bg landing__bg--parallax landing__bg--parallax--film-void"></div>
@@ -45,7 +41,7 @@ Home</a></li>
 
       <!--DESCRIPTION-->
       <div class="row">
-        <div class="page-film__item">
+        <div class="page-film__item page-film__item--bg page-film__item--bg--void">
           <p class="page-film__description">
             Void is a short film, written and directed by me, which is inspired by Charles Burns graphic novel. The story itself is fully original.In a world in which the problems of teenage sexuality , alienation and rejection are hidden beneath the surface of a mysterious plague , I tell the story of Dorian who is experiencing interpersonal affection, which will turn his life upside down.Film inspired by the graphic novel "Black Hole ", shows the path leading straight into the clutches of madness and emptiness.. <br />
             "Void" is a very personal project. Film along with it's soundtrack is a form of closer to a certain stage in life. Stage of exploration your inner self and settling with the fear of another day. As a young artist, I want this film and it's music to give as much as possible of the feelings that inspire me, move or cause pain. It is they, the feelings, who are the starting point for the history and atmosphere of this project. During the process of its formation, I drew inspiration from many different media - ambient music of Aphex Twin, works by Francis Bacon, Dan Barrett mysterious booklets or even movies such as Under The Skin, Beyond The Black Rainbow and Donnie Darko. It was all the inspiration and life situations that make me want to show you a sincere and uncompromising audio-visual tale of revenge and cleaning.
@@ -102,7 +98,10 @@ Home</a></li>
             © 2017 Stefan Monin
           </p>
         </footer>
-        <script src="..\node_modules\jquery\dist\jquery.min.js"></script>
-  	    <script src="..\node_modules\@fancyapps\fancybox\dist\jquery.fancybox.min.js"></script>
+        <script src="jquery\dist\jquery.min.js"></script>
+  	    <script src="@fancyapps\fancybox\dist\jquery.fancybox.min.js"></script>
+        <!-- build:js assets/scripts/App.js -->
+        <script src="temp/scripts/App.js"></script>
+        <!-- endbuild -->
     </body>
 </html>

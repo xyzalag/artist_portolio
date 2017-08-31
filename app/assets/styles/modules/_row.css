@@ -1,5 +1,9 @@
 .row {
 
+  &--bg-color {
+    background-color: rgba($lightBlue, 0.5);
+  }
+
   @mixin clearfix;
 
   &--t-padding {
@@ -62,7 +66,7 @@
     &__medium-8--smaller {
       width: 63%;
     }
-    
+
 
   }
 
