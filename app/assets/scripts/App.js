@@ -36,25 +36,16 @@ $(document).ready(function(){
   });
 });
 
-//MUSIC - HOME PAGE BUTTONS HOVER
+//HOME PAGE - CARD HOVER
 $(document).ready(function() {
-  $('.music__item').mouseenter(function() {
-    $(this).find('.music__text').css({'color':'#77B9A8'});
+  $('.card__item').mouseenter(function() {
+    $(this).find('.card__text').css({'color':'#77B9A8'});
   });
-  $('.music__item').mouseleave(function() {
-    $(this).find('.music__text').css({'color':'#fff'});
+  $('.card__item').mouseleave(function() {
+    $(this).find('.card__text').css({'color':'#fff'});
   });
 });
 
-//FILM-HOME PAGE BUTTONS HOVER
-$(document).ready(function() {
-  $('.film__item').mouseenter(function() {
-    $(this).find('.film__text').css({'color':'#77B9A8'});
-  });
-  $('.film__item').mouseleave(function() {
-    $(this).find('.film__text').css({'color':'#fff'});
-  });
-});
 
 // FANCYBOX
 $(document).ready(function() {

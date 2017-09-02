@@ -25,3 +25,7 @@ a{
 a:hover{
   color:$neonGreen;
 }
+
+.link-none {
+  text-decoration: none;
+}

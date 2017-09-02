@@ -38,6 +38,13 @@
     &--commerce {
       font-family: 'Oswald', sans-serif;
     }
+
+    &--contact {
+
+      @mixin atSmall {
+        margin-bottom: 60px;
+      }
+    }
   }
 
 }

@@ -10375,23 +10375,13 @@ __webpack_require__(4)(_jquery2.default);
   });
 });
 
-//MUSIC - HOME PAGE BUTTONS HOVER
+//HOME PAGE - CARD HOVER
 (0, _jquery2.default)(document).ready(function () {
-  (0, _jquery2.default)('.music__item').mouseenter(function () {
-    (0, _jquery2.default)(this).find('.music__text').css({ 'color': '#77B9A8' });
+  (0, _jquery2.default)('.card__item').mouseenter(function () {
+    (0, _jquery2.default)(this).find('.card__text').css({ 'color': '#77B9A8' });
   });
-  (0, _jquery2.default)('.music__item').mouseleave(function () {
-    (0, _jquery2.default)(this).find('.music__text').css({ 'color': '#fff' });
-  });
-});
-
-//FILM-HOME PAGE BUTTONS HOVER
-(0, _jquery2.default)(document).ready(function () {
-  (0, _jquery2.default)('.film__item').mouseenter(function () {
-    (0, _jquery2.default)(this).find('.film__text').css({ 'color': '#77B9A8' });
-  });
-  (0, _jquery2.default)('.film__item').mouseleave(function () {
-    (0, _jquery2.default)(this).find('.film__text').css({ 'color': '#fff' });
+  (0, _jquery2.default)('.card__item').mouseleave(function () {
+    (0, _jquery2.default)(this).find('.card__text').css({ 'color': '#fff' });
   });
 });
 
