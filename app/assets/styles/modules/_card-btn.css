@@ -55,7 +55,7 @@
     line-height: 1;
     cursor: pointer;
     transition: all 0.25s ease-out;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
 
     @mixin atMedium {
       font-size: 45px;
